@@ -1,0 +1,22 @@
+<GDAL_WMS>
+    <Service name="WMS">
+        <Version>1.3.0</Version>
+        <ServerUrl>https://data.geopf.fr/wms-r</ServerUrl>
+        <CRS>$CRS</CRS>
+        <ImageFormat>$FORMAT</ImageFormat>
+        <Layers>$LAYER</Layers>
+    </Service>
+    <DataWindow>
+        <UpperLeftX>$XMIN</UpperLeftX>
+        <UpperLeftY>$YMAX</UpperLeftY>
+        <LowerRightX>$XMAX</LowerRightX>
+        <LowerRightY>$YMIN</LowerRightY>
+        <SizeX>$WIDTH</SizeX>
+        <SizeY>$HEIGHT</SizeY>
+    </DataWindow>
+    <Timeout>$TIMEOUT</Timeout>
+    <BandsCount>$BAND_COUNT</BandsCount>
+    <BlockSizeX>$BLOCK_SIZE</BlockSizeX>
+    <BlockSizeY>$BLOCK_SIZE</BlockSizeY>
+    <MaxConnections>$MAX_CONN</MaxConnections>
+</GDAL_WMS>
