@@ -28,5 +28,5 @@ ENV TIMEOUT=3600
 WORKDIR /app
 COPY --chmod=644 wms_conf.xml /app
 COPY --chmod=755 script.sh /app
-RUN apt-get update && apt-get install gettext moreutils -y
+RUN apt-get update && apt-get install gettext -y
 CMD ["bash", "/app/script.sh"]
